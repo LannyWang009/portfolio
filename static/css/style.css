@@ -1,0 +1,383 @@
+
+html {
+    /*background-color: #BDBDBD;*/
+    background-color: #cad5b3;
+}
+
+body {
+    padding-top: 25px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.content {
+    margin-top: 20px;
+    max-width: 1100px;
+    min-height: 702px;
+    margin: auto;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #aadaca;
+    box-shadow: -5px 5px 20px #848484;
+    overflow: hidden;
+}
+
+.card_face_flip_relative_toggle {
+    position: relative;
+}
+
+a {
+    color: #FFCF0B;
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: right;
+}
+
+.prifle-image {
+    flex: 1;
+}
+
+#profile-pic { 
+    float:right;
+    border-radius: 5%;
+    max-width: 400px;
+    margin-top: 5px;
+}
+
+.profile-title {
+    flex: 1;
+    text-align: right;
+}
+
+.profile-title h1 {
+    margin-top:200px;
+}
+
+h1 {
+    font-family: 'Anonymous Pro', monospace;
+    text-transform: uppercase;
+}
+
+h2, h3, h4, p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    background-color: inherit;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    padding: .5em;
+    margin: 0;
+    letter-spacing: .1em;
+    box-sizing: border-box;
+}
+
+.h1_card-flip-toggles {
+    position: sticky;
+    top: 0;
+    /*Added z-index to keep eDonor images from loading above h1 */
+    z-index: 555;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+#projects {
+    width: 100%;
+}
+
+.projects-header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    /*background-color: #2F0F0B;*/
+    /*background-color: #1a1c33;*/
+    background-color: #21243c;
+    width: 100%;
+    height: 3em;
+    color: #F2F2F2;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #F2F2F2;
+    cursor: pointer;
+}
+
+.down-arrows, .up-arrows {
+    display: none;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.projects-div {
+    display: none;
+    background-color: #3C3C3C;
+    color: #F2F2F2;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 300px;
+}
+
+#about .project {
+    display: block;
+    text-align: center;
+    min-height: 0;
+}
+
+#about .project p:not(:first-child) {
+    padding-top: 0;
+}
+
+#about-contact {
+    font-size: 1.1em;
+}
+
+.skills, table {
+    margin: auto;
+    font-weight: 200;
+}
+th {
+    text-align: right;
+    font-weight: 300;
+}
+
+td {
+    text-align: left;
+    padding-left: 1em;
+}
+
+.app-screenshot {
+    max-width: 500px;
+    margin: 25px;
+    box-shadow: -5px 5px 20px #232323;
+}
+
+h4, .github-icon {
+    text-align: center;
+    margin: 0;
+    color: #F2F2F2;
+    text-transform: uppercase;
+    letter-spacing: .1em
+}
+
+a h4:hover, a .github-icon:hover {
+    color: #FFCF0B;
+}
+
+.project-header {
+    text-align: center
+}
+
+.project i {
+    font-size: .9em;
+}
+
+.project h4 {
+    display: inline-block;
+}
+
+.project p {
+    font-size: 1em;
+    padding: 1em 2em;
+    margin: 0;
+    font-weight: 200;
+    text-align: center;
+}
+
+.project-techs {
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: .25em;
+}
+
+#edonor-text-div {
+    max-width: 440px;
+}
+
+#imageSwap {
+    height: 715px;
+    width: 550px;
+}
+
+hr {
+    width: 90%;
+    border:1px solid #AAA;
+}
+
+#socials {
+    padding: 1em
+}
+
+#socials a {
+    color: #3C3C3C;
+    font-size: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#socials a:hover {
+    color: #7D7D7D;
+}
+
+#contact {
+    background-color: #3C3C3C;
+    margin-top: 3em;
+    position: absolute;
+    top: -1.5em;
+    right: -3em;
+    color: #F2F2F2;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    text-align: center;
+    width: 10em;
+}
+
+#contact:hover {
+    background-color: #7D7D7D;
+    cursor: pointer;
+}
+
+/* FORMATTING FOR DIV FLIP */
+
+body {
+    -webkit-perspective: 5000px;
+    perspective: 5000px;
+}
+
+#card {
+    position: relative;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+}
+
+.card_face {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#card_face_back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+#card.is-flipped {
+    -webkit-transform: translateX(-100%) rotateY(180deg);
+    -moz-transform: translateX(-100%) rotateY(180deg);
+    -ms-transform: translateX(-100%) rotateY(180deg);
+    transform: translateX(-100%) rotateY(180deg);
+    transform: translateX(-100%) rotateY(180deg);
+}
+
+/* DIV FLIP FORMATTING END */
+
+.fa-times {
+    position: absolute;
+    top: .5em;
+    right: .6em;
+    font-size: 2em;
+    color: #BDBDBD;
+}
+
+.fa-times:hover {
+    color: #7D7D7D;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+#card_face_back .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4C4C4C;
+}
+
+#card_face_back h3 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+#name, #email, #message {
+    margin-bottom: 2em;
+    font-size: 1em;
+    height: 1.75em;
+    width: 80%;
+    min-width: 350px;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    border-bottom: 2px solid #4C4C4C;
+    border-radius: 3px;
+    padding: .5em;
+    box-sizing: border-box;
+    background-color: #FDFDFD;
+}
+
+#name:placeholder, #email:placeholder, #message:placeholder {
+  color: lightgrey;
+  font-weight: 300;
+}
+
+#name:focus::-webkit-input-placeholder, #email:focus::-webkit-input-placeholder, #message:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#message {
+    height: 5em;
+    font-size: .8em;
+    resize: none;
+}
+
+form label {
+    font-size: .8em;
+    letter-spacing: .1em;
+    width: 80%;
+    text-align: left;
+    margin-bottom: .3em;
+}
+
+form button {
+    background-color: transparent;
+    color: #4C4C4C;
+    font-size: 2em;
+    border: none;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+#preload-plane {
+    visibility: hidden;
+}
