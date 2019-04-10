@@ -127,14 +127,18 @@ h2 {
 }
 
 .project {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: row;
+    align-items: center; */
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 5%;
     padding-right: 5%;
     min-height: 300px;
+}
+
+.project .img-container {
+    float:left;
 }
 
 #about .project {
@@ -208,6 +212,7 @@ a h4:hover, a .github-icon:hover {
     text-align: center;
     font-size: 1.5em;
     letter-spacing: .25em;
+    padding-left:80px;
 }
 
 #edonor-text-div {
