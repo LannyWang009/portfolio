@@ -127,9 +127,6 @@ h2 {
 }
 
 .project {
-    /* display: flex; */
-    /* flex-direction: row;
-    align-items: center; */
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 5%;
@@ -251,6 +248,7 @@ hr {
     top: -1.5em;
     right: -3em;
     color: #F2F2F2;
+    font-family: 'Oswald', sans-serif;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
