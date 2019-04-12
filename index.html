@@ -98,10 +98,10 @@
                         <div id="fullstack" class="projects-div">
                             <div id="trade" class="project">
                                 <div class="img-container">
-                                    <a href="https://lannywang009.github.io/Visualizing-US-Trade-By-State/" target="_blank"><img class="app-screenshot" src="https://gph.to/2OZM6gB" alt="Data Visualization of Trade and Commerce"></a>
+                                    <a href="https://lannywang009.github.io/Visualizing-US-Trade-By-State/" target="_blank"><img class="app-screenshot" src="https://gph.to/2v2nQB3" alt="Data Visualization of Trade and Commerce"></a>
                                 </div>
                                     <div class="project-header">
-                                        <a href="https://lannywang009.github.io/Visualizing-US-Trade-By-State/" target="_blank"><h4>Visualizing US International Trade</h4></a> 
+                                        <a href="https://lannywang009.github.io/Visualizing-US-Trade-By-State/" target="_blank"><h4>US International Trade & Commerce</h4></a> 
                                     </div>
                                     <p>
                                         This project features a web-based data dashboard visualizing trade data by state. 
@@ -109,10 +109,23 @@
                                         It was built using <strong>d3.js</strong> and is powered by the data from the U.S. Census Bureau, 
                                         specifically the Import and Export Merchandise trade statistics from 2014 to 2018.
                                     </p>
-                                    <p><i>
+                                    <p>
                                         This application provides an interactive view of the trade activity each state is engaged in, 
                                         aimed at giving insight into what commodities states are trading as well as who their top 
-                                        trade partners are. </i>
+                                        trade partners are. My teammate Becca and I spent two weeks learning D3 and built all the graphs. 
+                                        I built the map, the timeline slide, and the two circle layout graphs for export and import commodity 
+                                        categories. 
+                                    </p>
+                                    <p>
+                                        <i>What's the biggest challenge?</i>
+                                    </p>
+                                    <p>
+                                        <i>
+                                            The biggest challenge was to thoroughly understand the core concept of D3 selection, 
+                                            because that is core to the interactivity. I learned D3 mostly through debugging. 
+                                            I tried different peoples' methods to draw the layouts, added update functions, 
+                                            and created ways to console log bugs, until one approach worked out. Then I analyzed and summarized why.
+                                        </i>
                                     </p>
                                     <p>
                                         <a href='https://lannywang009.github.io/Visualizing-US-Trade-By-State/'>Live Demo</a>
@@ -128,33 +141,92 @@
                             
                                 <div id="2048" class="project">
                                     <div class="img-container">
-                                        <a href="https://lannywang009.github.io/2048-react-redux/" target="_blank"><img class="app-screenshot" src="https://gph.to/2UexsTK" alt="The 2048 Game"></a>
+                                        <a href="https://lannywang009.github.io/2048-react-redux/" target="_blank"><img class="app-screenshot" src="https://gph.to/2P56KMa" alt="The 2048 Game"></a>
                                     </div>
                                         <div class="project-header">
                                             <a href="https://lannywang009.github.io/2048-react-redux/" target="_blank"><h4>The 2048 Game</h4></a> 
                                         </div>
                                         <p>
-                                            This is a math and logic game 2048. 
+                                            This is a math and logic game 2048 (originally created by Gabriele Cirulli), created using React and Redux. This app only 
+                                            works on desktop/laptop, since it uses arrow keys. 
                                         <p>
-                                            It was built using <strong>d3.js</strong> and is powered by the data from the U.S. Census Bureau, 
-                                            specifically the Import and Export Merchandise trade statistics from 2014 to 2018.
+                                            How to play this game: The user will use arrowup, arrowdown, arrowright, and arrowleft 
+                                            to slide numbered tiles on a grid to combine them to create a tile with the number 2048. 
+                                            Tiles with the same number will merge, if they have the same value and are next to each other 
+                                            in the moving direction. If all squares are occupied, the user loses the game.
                                         </p>
-                                        <p><i>
-                                            This application provides an interactive view of the trade activity each state is engaged in, 
-                                            aimed at giving insight into what commodities states are trading as well as who their top 
-                                            trade partners are. </i>
+                                        <p>
+                                            <i>
+                                             What's the biggest challenge?
+                                            </i>
                                         </p>
+                                        <p>
+                                            <i>
+                                            My approach is to first create a simple React Component that renders the board,
+                                            then work on the Redux framework that picks up the user action, and later work on the game logic in the reducer. The game logic and the change 
+                                            inside the reducer was the more difficult part. I segmented the game logic and used pure functions to modify the state changes, 
+                                            so that it would be convenient to debug and test. If given more time, I would add annimation and transitions to
+                                            the tiles to enhance the game experience. 
+                                            </i>
+                                        </p>
+                                       
                                         <p>
                                             <a href='https://lannywang009.github.io/2048-react-redux/'>Live Demo</a>
                                             <a href="https://github.com/LannyWang009/2048-react-redux" target="_blank" style="padding-left:100px;"><i class="fab fa-large fa-github github-icon"></i>Github Page</a>
                                             <span class="project-techs">
                                                     <i class="fab fa-html5"></i>
                                                     <i class="fab fa-css3-alt"></i>
-                                                    <img src='static/img/d3logo.svg' style='width:0.8em'/>     
+                                                    
+                                                    <img src='static/img/React-icon.svg.png' style='width:0.9em'/>  
+                                                    <img src='static/img/redux.svg' style='width:0.8em'/>        
                                             </span>
                                         </p>
                                 </div>
                             <hr>
+                            <div id="movie" class="project">
+                                    <div class="img-container">
+                                        <a href="https://www.youtube.com/watch?v=Aveo7c6T75Q" target="_blank"><img class="app-screenshot" src="https://gph.to/2DcuA3M" alt="Movie Shopping App"></a>
+                                    </div>
+                                        <div class="project-header">
+                                            <a href="https://www.youtube.com/watch?v=Aveo7c6T75Q" target="_blank"><h4>Shop Movies!</h4></a> 
+                                        </div>
+                                        <p>
+                                            This is a solo backend project featuring a movie shopping site. The app allows visitors to filter
+                                            movies by genre, comment and add movies to shopping cart after logging in. Movie data was seeded through querying 
+                                            the Omdb api by title. The site is rendered completely from the backend through ejs template. I used express, passport, passport-mongoose
+                                            to set up server routes and authentification. 
+                                        
+                                        <p>
+                                            <i>
+                                             What's the biggest challenge?
+                                            </i>
+                                        </p>
+                                        <p>
+                                            <i>
+                                            The most challenging part is to understand what is going on on the lower level with each dependencies.
+                                            There are so many npm packages and tools out there. To use them correctly, I needed to understand the fundamental concepts
+                                            , such as session id, tokens and etc. Setting the CRUD operations against the database was also essential to 
+                                            this project. I enjoyed working on the end points. The next step will be to modify the rendering part from ejs to React, and to make
+                                            it a full-stack project. 
+                                            </i>
+                                            
+                                        </p>
+                                       
+                                        <p>
+                                            <a href='https://www.youtube.com/watch?v=Aveo7c6T75Q'>Demo Video</a>
+                                            <a href='#'>  |  Live Demo: coming up</a>
+                                            <a href="https://github.com/LannyWang009/Shop-Your-Movies" target="_blank" style="padding-left:100px;"><i class="fab fa-large fa-github github-icon"></i>Github Page</a>
+                                            
+                                        </p>
+                                        <p>
+                                                <span class="project-techs">
+                                                        <img src='static/img/nodejs.png' style='height:1em'/>     
+                                                        <img src='static/img/passport.png' style='height:1em'/>     
+                                                        <img src='static/img/mongoose.png' style='height:1.5em'/>     
+                                                        <img src='static/img/mongodb.png' style='height:1em'/>     
+                                                </span>
+                                        </p>
+                                </div>
                            </div>
                         <div id="misc-header" class="projects-header">
                             <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
@@ -163,80 +235,19 @@
                             <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
                             <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
                         </div>
-                        <div id="misc" class="projects-div">
-                            <div id="edonor" class="project">
-                                <div>
-                                    <a href="https://mdandersonbloodbank.org/index.cfm?group=page&pgfunction=fixedsites" target="_blank"><div id="imageSwap"></div></a>
-                                </div>
-                                <div id="edonor-text-div">
-                                    <div class="project-header">
-                                        <a href="https://mdandersonbloodbank.org/index.cfm?group=page&pgfunction=fixedsites" target="_blank"><h4>MD Anderson's eDonor Page</h4></a>
-                                    </div>
-                                    <p>
-                                        Updated the MD Anderson Blood Donor Center's eDonor 
-                                        "Donor Centers" page from a non-intuitive listing 
-                                        of sites and hours to a more engaging and seamless 
-                                        user experience through use of pictures, different
-                                        fonts, spacing, and elimination of duplicated information.
-                                    </p>
-                                    <div class="project-techs">
-                                        <i class="fab fa-html5"></i>
-                                        <i class="fab fa-css3-alt"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div id="barcodes" class="project">
-                                <div>
-                                    <h4>Manufacturing Barcode Cheat Sheets</h4>
-                                    <p>
-                                        Color-coded barcode cheat sheets for the MD Anderson Blood Donor 
-                                        Center's Component Processing Lab. Barcodes contain strings that 
-                                        trigger custom scripts to automatically enter data into the 
-                                        ElDorado Donor application and move the cursor around the screen. 
-                                    </p>
-                                    <p>
-                                        Increased component processing speed by 300%.
-                                    </p>
-                                    <div class="project-techs">
-                                        
-                                    </div>
-                                </div>
-                                <div>
-                                    <img class="app-screenshot" src="static/img/barcodes.png" alt="Barcode Cheat Sheet Examples">
-                                </div>
-                            </div>
-                            <hr>
-                            <div id="tmp-report" class="project">
-                                <div>
-                                    <img class="app-screenshot" src="static/img/report.png" alt="Report">
-                                </div>
-                                <div>
-                                    <h4>Granulocyte Donors Review Report</h4>
-                                    <p>
-                                        Custom report created to summarize all relevant data 
-                                        from multiple applications for granulocyte prescreen 
-                                        donors. Report used by transfusion medicine pathologists 
-                                        to more easily and quickly determine eligibility of 
-                                        potential granulocyte donors, saving them an estimated five
-                                        hours each week. PHI redacted in this example.
-                                    </p>
-                                    <div class="project-techs">
-                                        
-                                    </div>
-                                </div>
-                            </div>
+                        <div id="resume" class="projects-div">
+                            
 
                         </div>
                     </div>
                     <div id="socials">
                         <a href="https://github.com/LannyWang009" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="www.linkedin.com/in/lanny-wang" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/lanny-wang" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="" target="_blank"><i class="fal fa-file-alt"></i></a>
                     </div>
-                    <div id="contact">
+                    <!-- <div id="contact">
                         Contact
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div id="card_face_back" class="card_face">

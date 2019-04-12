@@ -53,45 +53,45 @@ $(document).ready(function () {
   // This is not in the CSS file since the img hover affects elements farther back in
   // the HTML code
 
-  $('#cs50 img, #cs50 h4').hover(
-    function () {
-      $('#cs50 h4').css('color', '#FFCF0B')
-    }, function () {
-      $('#cs50 h4').css('color', '#EAEAEA')
-    })
+  // $('#cs50 img, #cs50 h4').hover(
+  //   function () {
+  //     $('#cs50 h4').css('color', '#FFCF0B')
+  //   }, function () {
+  //     $('#cs50 h4').css('color', '#EAEAEA')
+  //   })
 
-  $('#m4 img, #m4 h4').hover(
-    function () {
-      $('#m4 h4').css('color', '#FFCF0B')
-    }, function () {
-      $('#m4 h4').css('color', '#EAEAEA')
-    })
+  // $('#m4 img, #m4 h4').hover(
+  //   function () {
+  //     $('#m4 h4').css('color', '#FFCF0B')
+  //   }, function () {
+  //     $('#m4 h4').css('color', '#EAEAEA')
+  //   })
 
-  $('#blackjack img, #blackjack h4').hover(
-    function () {
-      $('#blackjack h4').css('color', '#FFCF0B')
-    }, function () {
-      $('#blackjack h4').css('color', '#EAEAEA')
-    })
+  // $('#blackjack img, #blackjack h4').hover(
+  //   function () {
+  //     $('#blackjack h4').css('color', '#FFCF0B')
+  //   }, function () {
+  //     $('#blackjack h4').css('color', '#EAEAEA')
+  //   })
 
-  $('#boditraq img, #boditraq h4').hover(
-    function () {
-      $('#boditraq h4').css('color', '#FFCF0B')
-    }, function () {
-      $('#boditraq h4').css('color', '#EAEAEA')
-    })
+  // $('#boditraq img, #boditraq h4').hover(
+  //   function () {
+  //     $('#boditraq h4').css('color', '#FFCF0B')
+  //   }, function () {
+  //     $('#boditraq h4').css('color', '#EAEAEA')
+  //   })
 
-  $('#edonor #imageSwap, #edonor h4').hover(
-    function () {
-      $('#edonor h4').css('color', '#FFCF0B')
-    }, function () {
-      $('#edonor h4').css('color', '#EAEAEA')
-    })
+  // $('#edonor #imageSwap, #edonor h4').hover(
+  //   function () {
+  //     $('#edonor h4').css('color', '#FFCF0B')
+  //   }, function () {
+  //     $('#edonor h4').css('color', '#EAEAEA')
+  //   })
 
-  $('.fa-paper-plane').hover(function () {
-    $(this).toggleClass('fal')
-    $(this).toggleClass('fas')
-  })
+  // $('.fa-paper-plane').hover(function () {
+  //   $(this).toggleClass('fal')
+  //   $(this).toggleClass('fas')
+  // })
 
   $('#contact, .fa-times, #about-contact').click(function () {
     $('#card').toggleClass('is-flipped')
